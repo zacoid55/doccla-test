@@ -2,7 +2,7 @@
 Web automation tech test for Doccla
 
 ### Overview
-These are four tests run against [saucedemo.com](https://www.saucedemo.com/v1/) and test: 
+These are four tests run against [saucedemo.com](https://www.saucedemo.com): 
 - A happy path through the main flow of the site i.e. selecting and purchasing some items
 - One happy path test against the login
 - Two unhappy path tests against the login
