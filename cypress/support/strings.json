@@ -1,18 +1,16 @@
 {
+    "errors": {
+        "usernameAndPasswordDontMatch": "Epic sadface: Username and password do not match any user in this service",
+        "userLockedOut": "Sorry, this user has been locked out."
+    },
     "expected": {
-        "chekoutComplete": "Thank you for your order!"
+        "checkoutComplete": "Thank you for your order!"
     },
     "names": {
         "firstName": "Zachary",
         "secondName": "Borrelli"
     },
-    "usernames": {
-        "validUsername": "standard_user"
-    },
-    "passwords": {
-        "validPassword": "secret_sauce"
-    },
     "postCodes": {
-        "validPostCode": "DA9 9NS"
+        "postCode": "DA9 9NS"
     }
 }

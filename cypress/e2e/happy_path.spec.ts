@@ -3,15 +3,19 @@ import 'cypress-each';
 import routes from '../support/routes.json';
 import cypressIDs from '../support/cypress_ids.json';
 import strings from '../support/strings.json';
+import { ValidLogins } from '../support/logins';
 
 import { loginWith, enterDetails } from 'cypress/support/helperCommands';
 
+const validUsername = ValidLogins.STANDARD_USERNAME_AND_PASSWORD.username
+const validPassword = ValidLogins.STANDARD_USERNAME_AND_PASSWORD.password
+
 describe('Login and purchase items successfully', () => {
 
-    it('allows me to successully login, add items to my cart and checkout', () => {
+    it('allows me to successfully login, add items to my cart and checkout', () => {
         // navigate to website and login
         cy.visit('/');
-        loginWith(strings.usernames.validUsername, strings.passwords.validPassword)
+        loginWith(validUsername, validPassword)
         cy.url().should('contain', routes.inventory);
 
         // add three items to your basket and check for count
@@ -27,12 +31,12 @@ describe('Login and purchase items successfully', () => {
         enterDetails(
             strings.names.firstName, 
             strings.names.secondName,
-            strings.postCodes.validPostCode
+            strings.postCodes.postCode
         )
 
-        // finish the transatction and check for success
-        cy.get(`[id^=${cypressIDs.buttons.contine}]`).click();
+        // finish the transaction and check for success
+        cy.get(`[id^=${cypressIDs.buttons.continue}]`).click();
         cy.get(`[id^=${cypressIDs.buttons.finish}]`).click();
-        cy.get(`[id^=${cypressIDs.containers.checkoutComplete}]`).contains(strings.expected.chekoutComplete);
+        cy.get(`[id^=${cypressIDs.containers.checkoutComplete}]`).contains(strings.expected.checkoutComplete);
     })
 });
