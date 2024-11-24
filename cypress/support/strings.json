@@ -1,0 +1,18 @@
+{
+    "expected": {
+        "chekoutComplete": "Thank you for your order!"
+    },
+    "names": {
+        "firstName": "Zachary",
+        "secondName": "Borrelli"
+    },
+    "usernames": {
+        "validUsername": "standard_user"
+    },
+    "passwords": {
+        "validPassword": "secret_sauce"
+    },
+    "postCodes": {
+        "validPostCode": "DA9 9NS"
+    }
+}

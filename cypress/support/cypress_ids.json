@@ -1,0 +1,24 @@
+{
+    "textFields": {
+        "username": "user-name",
+        "password": "password",
+        "firstName": "first-name",
+        "secondName": "last-name",
+        "postCode": "postal-code"
+    },
+    "buttons": {
+        "login": "login-button",
+        "addBackpackToCart": "add-to-cart-sauce-labs-backpack",
+        "addBikeLightToCart": "add-to-cart-sauce-labs-bike-light",
+        "addOnesieToCart": "add-to-cart-sauce-labs-onesie",
+        "checkout": "checkout",
+        "contine": "continue",
+        "finish": "finish"
+    },
+    "links": {
+        "shoppingCart": "shopping_cart_container"
+    },
+    "containers": {
+        "checkoutComplete": "checkout_complete_container"
+    }
+}
