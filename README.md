@@ -11,7 +11,7 @@ These are four tests run against [saucedemo.com](https://www.saucedemo.com):
 
 1. Run the `npm install` command to install the relevant packages
 2. Then run `npm run cypress:run` to run the tests in the CLI against Chrome or `npm run cypress:open` to run the tests in the Cypress Launcher
-`
+
 ### Locations
 The test files are in the `e2e` directory and all relevant code is in the `support` directory
 
